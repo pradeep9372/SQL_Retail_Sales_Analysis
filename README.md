@@ -18,6 +18,27 @@ Sample dataset containing retail sales records, including fields like transactio
 3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
 4. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the sales data.
 
+### Business Questions & Analysis
+Examples of SQL queries used:
+-Retrieve all sales on '2022-11-05'
+-High quantity clothing sales in Nov-2022
+-Category-wise total sales
+-Average age of beauty product customers
+
+High-value transactions (> 1000)
+
+Gender-wise and category-wise transaction counts
+
+Best selling months
+
+Top 5 customers by total sales
+
+Unique customers per category
+
+Orders by time shift (Morning, Afternoon, Evening)
+
+Full list of queries provided in the retail_sales_analysis.sql file.
+
 ## Project Structure
 
 ### 1. Database Setup
@@ -89,14 +110,14 @@ WHERE
 
 The following SQL queries were developed to answer specific business questions:
 
-1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
+1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**
 ```sql
 SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**
 ```sql
 SELECT 
   *
@@ -109,7 +130,7 @@ WHERE
     quantity >= 4
 ```
 
-3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
+3. **Write a SQL query to calculate the total sales (total_sale) for each category.**
 ```sql
 SELECT 
     category,
@@ -119,7 +140,7 @@ FROM retail_sales
 GROUP BY 1
 ```
 
-4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
+4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**
 ```sql
 SELECT
     ROUND(AVG(age), 2) as avg_age
@@ -133,7 +154,7 @@ SELECT * FROM retail_sales
 WHERE total_sale > 1000
 ```
 
-6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
+6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**
 ```sql
 SELECT 
     category,
@@ -144,7 +165,7 @@ GROUP BY category, gender
 ORDER BY category;
 ```
 
-7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
+7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**
 ```sql
 SELECT
 		year,month,avg_sale
@@ -161,7 +182,7 @@ SELECT
 	WHERE rank = 1
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales**
 ```sql
 SELECT 
     customer_id,
@@ -172,7 +193,7 @@ ORDER BY 2 DESC
 LIMIT 5
 ```
 
-9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
+9. **Write a SQL query to find the number of unique customers who purchased items from each category.**
 ```sql
 SELECT 
     category,    
@@ -181,7 +202,7 @@ FROM retail_sales
 GROUP BY 1
 ```
 
-10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
+10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**
 ```sql
 WITH hourly_sale
 AS
@@ -200,3 +221,27 @@ SELECT
 FROM hourly_sale
 GROUP BY 1
 ```
+
+## Findings
+
+- **Customer Demographics**: The dataset includes customers from various age groups, with sales distributed across different categories such as Clothing and Beauty.
+- **High-Value Transactions**: Several transactions had a total sale amount greater than 1000, indicating premium purchases.
+- **Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons.
+- **Customer Insights**: The analysis identifies the top-spending customers and the most popular product categories.
+
+## Reports
+
+- **Sales Summary**: A detailed report summarizing total sales, customer demographics, and category performance.
+- **Trend Analysis**: Insights into sales trends across different months and shifts.
+- **Customer Insights**: Reports on top customers and unique customer counts per category.
+
+## How to Use
+
+1. **Clone the Repository**: Clone this project repository from GitHub.
+2. **Set Up the Database**: Run the SQL scripts provided in the `database_setup.sql` file to create and populate the database.
+3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
+4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
+
+## Conclusion
+
+This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product performance.
