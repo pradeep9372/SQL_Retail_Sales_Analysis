@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates core SQL skills through exploration, cleaning, and analysis of retail sales data. It covers database setup, exploratory data analysis (EDA), and answers business questions with SQL queries — ideal for beginners building a solid foundation in SQL.
+This project demonstrates core SQL skills through exploration, cleaning, and analysis of retail sales data. It covers database setup, exploratory data analysis (EDA), and answers business questions with SQL queries.
 
 ## 📄 Project Files
 retail_sales_analysis.sql:
