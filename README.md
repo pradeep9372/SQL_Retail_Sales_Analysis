@@ -7,6 +7,7 @@ This project demonstrates core SQL skills through exploration, cleaning, and ana
 ## 📄 Project Files
 **retail_sales_analysis.sql:**
 Contains SQL queries for cleaning, exploring, and analyzing retail sales data.
+
 **SQL - Retail Sales Analysis_utf.csv:**
 Sample dataset containing retail sales records, including fields like transaction dates, product categories, quantities, and revenues.
 
