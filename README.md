@@ -20,9 +20,9 @@ Sample dataset containing retail sales records, including fields like transactio
 
 ### Business Questions & Analysis
 Examples of SQL queries used:
--Retrieve all sales on '2022-11-05'
--High quantity clothing sales in Nov-2022
--Category-wise total sales
+- Retrieve all sales on '2022-11-05'
+- High quantity clothing sales in Nov-2022
+- Category-wise total sales
 -Average age of beauty product customers
 
 High-value transactions (> 1000)
