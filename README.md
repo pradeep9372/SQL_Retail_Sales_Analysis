@@ -31,7 +31,7 @@ Examples of SQL queries used:
 - Unique customers per category
 - Orders by time shift (Morning, Afternoon, Evening)
 
-Full list of queries provided in the retail_sales_analysis.sql file.
+#### Full list of queries provided in the retail_sales_analysis.sql file.
 
 ## Project Structure
 
