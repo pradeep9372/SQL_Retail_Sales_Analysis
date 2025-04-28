@@ -23,19 +23,13 @@ Examples of SQL queries used:
 - Retrieve all sales on '2022-11-05'
 - High quantity clothing sales in Nov-2022
 - Category-wise total sales
--Average age of beauty product customers
-
-High-value transactions (> 1000)
-
-Gender-wise and category-wise transaction counts
-
-Best selling months
-
-Top 5 customers by total sales
-
-Unique customers per category
-
-Orders by time shift (Morning, Afternoon, Evening)
+- Average age of beauty product customers
+- High-value transactions (> 1000)
+- Gender-wise and category-wise transaction counts
+- Best selling months
+- Top 5 customers by total sales
+- Unique customers per category
+- Orders by time shift (Morning, Afternoon, Evening)
 
 Full list of queries provided in the retail_sales_analysis.sql file.
 
