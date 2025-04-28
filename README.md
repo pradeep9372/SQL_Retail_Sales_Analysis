@@ -18,7 +18,7 @@ Sample dataset containing retail sales records, including fields like transactio
 3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
 4. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the sales data.
 
-### Business Questions & Analysis
+## Business Questions & Analysis
 Examples of SQL queries used:
 - Retrieve all sales on '2022-11-05'
 - High quantity clothing sales in Nov-2022
