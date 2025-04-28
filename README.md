@@ -22,7 +22,7 @@ Sample dataset containing retail sales records, including fields like transactio
 - **Database Creation**: The project starts by creating a database named `sql_retail_sales_analysis`.
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
-- ```sql
+```sql
 CREATE DATABASE p1_retail_db;
 
 CREATE TABLE retail_sales
@@ -40,6 +40,7 @@ CREATE TABLE retail_sales
     total_sale FLOAT
 );
 ```
+
 ### 2. Data Exploration & Cleaning
 
 - **Record Count**: Determine the total number of records in the dataset.
